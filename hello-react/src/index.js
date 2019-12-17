@@ -6,7 +6,7 @@ import Header from "./Header";
 import Content from "./Content";
 import browserHistory from "react-router/lib/browserHistory";
 import { Router, Route, Link } from "react-router";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // ReactDOM.render(

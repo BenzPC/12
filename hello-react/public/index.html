@@ -16,15 +16,143 @@
 
     <title>React App</title>
     <style>
-      body{
-        background-color: aliceblue;
+      /* body เริ่ม */
+      body {
+        margin: 0px;
+        background-color: #e9ebee;
+      }
+      /* body สิ้นสุด */
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      button {
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .25rem;
+        cursor: pointer;
       }
     
+
+      /* เริ่ม แถบเมนูด้านบน*/
+      .navbar_PC {
+        background-color: #61abf5de !important;
+        padding: 8px 15px;
+        height: 40px;
+      }
+      /* เริ่ม จัดเนื้อหาให้อยู่ตรงกลาง */
+      .container_PC {
+        width: 100%;
+        padding: 8px 15px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        /* justify-content: space-between; */
+      }
+      @media (max-width: 576px) {
+        .container_PC {
+          max-width: 540px;
+        }
+        .dd_ImgMenu_PC {
+         display: none;
+         
+         
+        }
+      }
+      @media (min-width: 768px) {
+        .container_PC {
+          max-width: 720px;
+        }
+        .dd_ImgMenu_PC {
+        display: inherit;
+         
+        }
+      }
+      @media (min-width: 992px) {
+        .container_PC {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container_PC {
+          max-width: 1140px;
+        }
+      }
+      /* สิ้นสุด จัดเนื้อหาให้อยู่ตรงกลาง */
+      /* เริ่ม เมนูด้านซ้ายของ*/
+      .NBmenuL_PC {
+        margin-right: auto !important;
+       
+      }
+      /* สิ้นสุด เมนูด้านซ้ายของ*/
+      /* เริ่ม เมนูด้านขวาของ*/
+      .NBmenuR_PC {
+        display: flex;
+      }
+      /* สิ้นสุด เมนูด้านขวาของ*/
+     
+      .NBmenuR_item_PC {
+        text-decoration: none;
+        padding: 2px 7px;
+        cursor: pointer;
+      }
+      .NBmenuR_item_PC:hover {
+        background-color: #63aaf1;
+      }
+      .NBmenuRdd_PC{
+        position: relative;
+        padding-top: 5px;
+      }
+      .dd_menu_PC {
+        list-style: none;
+        padding: 8px;
+        margin-top: 16px;
+        display: none;
+        background-color: #fff;
+        z-index: 1000;
+        position: absolute;
+        width: max-content;
+        right: 0 ;
+       
+        border-radius: .25rem;
+      }
+      .dd_ImgMenu_PC {
+        position: absolute;
+        right: 0;
+        top: -14px;
+        margin: 2px 9px;
+        width: 12px ;
+        height : 12px;
+       
+      }
+      .dd_item_PC {
+        font-size: 0.8em;
+        line-height: 40px;
+        text-align: left;
+        display: block;
+        width: -webkit-fill-available;
+        /* margin : 5px 0px ; */
+      }
+      .dd_item_PC+.dd_item_PC {
+        margin-top : 5px ;
+      }
+      /* .NBmenuRdd_PC:hover .dd_menu_PC{
+        display: inherit;
+      } */
+
+      .show{
+        display: inherit;
+      }
+
+     
+ 
+
+
+      /* สิ้นสุด แถบเมนูด้านบน */
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="head" ></div>
+    <div id="head"></div>
     <div id="root" name="root" class="root"></div>
     <div id="root1" name="root" class="root"></div>
   </body>
